@@ -113,7 +113,9 @@ class _HomeTaskScreenState extends State<HomeTaskScreen> {
           TasksSection(
             tasks: _tasks,
             onTaskToggle: _toggleTask,
-            onSeeAll: () {},
+            onSeeAll: () {
+              Navigator.of(context).pushNamed('/all-tasks');
+            },
           ),
         ],
       ),
